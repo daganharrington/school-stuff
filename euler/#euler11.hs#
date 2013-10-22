@@ -1,0 +1,5 @@
+import System.IO
+
+main = do
+  lss <- map words (fmap lines $ readFile "grid.txt")
+  print $ lss
