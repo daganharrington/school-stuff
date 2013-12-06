@@ -1,6 +1,6 @@
 /*********************************************************#
  ---------------------------------------------------------
- Dagan Harrington | Dr. Lyons | Parallel Computation | Fordham
+ dagan '13
  mpi_vector.c -> Vector summation using MPI_Scatter and MPI_Gather
 
  An array of size VECSIZE, type Int is populated.

@@ -1,5 +1,6 @@
 /*************************************************************
-Dagan Harrington | Dr. Lyons | Parallel Computation | Fordham
+dagan '13
+
 mpi_kmeans.c -> parallel KMeans implementation
 Alg :
   1-Scatter N/p points to p processors

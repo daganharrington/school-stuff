@@ -1,5 +1,5 @@
 /*****************
-Dagan Harrington | Dr. Lyons | Parallel Computation | Fordham
+dagan '13
 mpi_monte.c -> monte carlo pi estimation using
 MPI_Broadcast and MPI_Reduce.
 
