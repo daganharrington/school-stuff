@@ -16,12 +16,18 @@ int main(){
   
   srand(time(NULL));
   for (int i=0; i<10; i++)
-    x.insert(rand() % 100);
-  
+    //x.insert(rand() % 100);
+    x.insert(i);
+
   x.print_inorder();
 
   x.print_preorder();
+  
+  x.flatten_inplace();
 
+  x.print_preorder();
+  
+  x.print_inorder();
   return 0;
 }
 
@@ -86,9 +92,9 @@ void BST<T>::traverse_preorder(Node* n, Func f){
   if (n){
     f(n->key);
     if (n->l)
-      traverse_inorder(n->l, f);
+      traverse_preorder(n->l, f);
     if (n->r)
-      traverse_inorder(n->r, f);
+      traverse_preorder(n->r, f);
   }
 }
 
@@ -111,3 +117,9 @@ void BST<T>::print_preorder(){
 
 }
 
+template <class T>
+void BST<T>::flatten_inplace(Node *n){
+  //recursive would be nice
+  cout << "flattening\n";
+  cout << n->key << endl;
+}

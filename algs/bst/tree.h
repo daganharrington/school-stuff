@@ -44,4 +44,5 @@ class BST {
   void print_preorder();    //Theta(n)
   void print_postorder();   //Theta(n)
 
+  void flatten_inplace(Node*);
 };
