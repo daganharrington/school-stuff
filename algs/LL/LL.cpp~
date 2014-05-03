@@ -1,0 +1,52 @@
+#include <iostream>
+#include <algorithm>
+#include <time.h>
+
+#include "LL.h"
+
+template <class T>
+void LL<T>::insert(T x){
+
+}
+
+template <class T>
+void LL<T>::print(){
+  Node* curr = root;
+  while (curr){
+    std::cout<<curr->value<<" "<<std::endl;
+    curr=curr->next;
+  }
+  std::cout<<std::endl;
+  
+}
+
+template <class T>
+void LL<T>::remove(T x){
+
+}
+
+template <class T>
+T LL<T>::search(T x){
+
+}
+
+int main(int argc, char** argv){
+  
+  LL<double> *list = new LL<double>();
+  //LL<double> *list;
+
+
+  if (argc > 1){
+    std::cout << 
+      "not sure how to make object instantiation use typeof()\n";
+  }
+  else{
+    srand(time(NULL));
+    for (int i=0; i<20; i++)
+      list->insert(double(rand()) / 1000);
+    
+    list->print();
+  }
+
+  return 42;
+}

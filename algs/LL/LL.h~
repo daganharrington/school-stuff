@@ -1,0 +1,29 @@
+/* LL class as a springboard for list algorithms */
+
+template <class T>
+class LL {
+  
+ private:
+  struct Node
+  {
+    Node* next;
+    Node* parent;
+    T value;
+  };
+  Node* root;
+  
+ public:
+  LL() {root = NULL; root->parent = NULL; root->next = NULL;}
+  void insert(T);
+  void remove(T);
+  void print();
+  T search(T);
+
+  template<typename Func>
+    void mapLL(Node*, Func);
+  template<typename Func>
+    T reduceLL(Node*, Func);
+  
+  bool isEmpty() const {return root == NULL;}
+
+};

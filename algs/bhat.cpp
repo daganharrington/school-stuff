@@ -33,16 +33,16 @@ double Bhat (Eigen::MatrixXd A_mean, Eigen::MatrixXd A_var,
 }
 
 int main()
-{  
+ex{  
   Eigen::MatrixXd A_mean(2,1);
-  A_mean << 0, 3;
+  A_mean << 5000, 5500;
   Eigen::MatrixXd A_var(2,2);
-  A_var << 4, 1, 1, 4;
+  A_var << 100000, 0, 0, 100000;
   
   Eigen::MatrixXd B_mean(2,1);
-  B_mean << 5, 7;
+  B_mean << 6000, 5500;
   Eigen::MatrixXd B_var(2,2);
-  B_var << 2, 0, 0, 2;
+  B_var << 100000, 0, 0, 100000;
   
   std::cout << "Overlapping proportion is : "<< 
     Bhat(A_mean,A_var,B_mean,B_var) << std::endl;
